@@ -1,4 +1,6 @@
 <?php 
+session_start();
+// var_dump($_SESSION['Name']);die;
 $oldP ="";
 $newP = "";
 $confirmP ="";
@@ -6,50 +8,65 @@ $error1 = "";// this will be use for displaying error (Username or password is i
 $error = "";// this will be use for displaying sql connect errors
 
 if(isset($_POST['oldP'])){ /* this if checks is form is submitted by checking that $_POST['username'] is set or exists */
-    var_dump('anjing');
     $newP = $_POST['newP'];
 	$confirmP = $_POST['confirmP'];
 	$oldP = $_POST['oldP'];
 	if($newP == $confirmP){
         include 'connection.php'; /* this file contains variables used for connecting to database ($server,$username,$password,$dbname)*/
         $conn = new mysqli($server, $username, $password,$dbname);// this create connection
-        var_dump('anjing1');
         if ($conn->connect_error) { //  this checks if there error connecting to server
 	        $error = die("Connection failed: " . $conn->connect_error); // saves error  in $error
         } 
         // $user =  trim(htmlspecialchars($_POST['username']));/* this will trim(remove extra spaces) and remove html tags from username*/
         // $pass = trim(htmlspecialchars($_POST['password']));/* this will trim(remove extra spaces) and remove html tags from password*/
-        $sql = "SELECT * FROM `users` WHERE password ='".$oldP."'";
-        var_dump('anjing2');
+        $sql = "SELECT * FROM `users` WHERE username ='".$_SESSION['Name']."'";
         $result= $conn->query($sql);
-        var_dump($result);
         if($result->num_rows < 0){
             $error = "your pass is wrong";
-            var_dump('anjing4');
         }
         else {
-            var_dump('anjing3');
-            $sql = "UPDATE 'users' SET password = '".$oldP."' WHERE username = 'pradnyashita'";
-            var_dump($sql);
-            if($conn->query($sql)== true){
-		   
-			$sql = "select * from users where username='".$user."'";
-			$result=$conn->query($sql);
-			while($row = $result->fetch_assoc()){
+            // var_dump('anjing3');
+
+            $sql = "SELECT * from users where username='".$_SESSION['Name']."'";
+            $result=$conn->query($sql);
+                // var_dump($result);die;
+			$row = $result->fetch_assoc();
 				
-		    $_SESSION['Name'] =  $row['username'];
-			$_SESSION['Id'] = $row['Id'];
-			$sql = "DELETE FROM ".$dbname.".`online` WHERE plrid=".$_SESSION["Id"];
+		        
+			$id= $row['Id'];
+			$sql = "DELETE FROM ".$dbname.".`users` WHERE id='".$id."'";
 			$conn->query($sql);
-			$sql = "INSERT INTO ".$dbname.".`online`(`plrid`, `plrname`) VALUES (".$_SESSION['Id'].",'".$_SESSION['Name']."')";
-			$conn->query($sql);
+			$sql = "INSERT INTO ".$dbname.".`users`(`id`, `username`, `password`) VALUES ('".$id."','".$_SESSION['Name']."','". $newP."')";
+            $conn->query($sql);
+            header("Location:online.php"); /* Redirect browser */
+            // $sql = "UPDATE `users` SET password = '".$newP."' WHERE username = '".$_SESSION['Name']."'";
+            // $conn->query($sql);
+            // var_dump($result->num_rows);die;
+
+            // $sql = "DELETE FROM ".$dbname.". `users` WHERE username ='".$_SESSION["Name"]."'";
+			// $conn->query($sql);
+			// $sql = "INSERT INTO ".$dbname.".`users`(`plrid`, `username`, ``) VALUES (".$_SESSION['Id'].",'".$_SESSION['Name']."')";
+			// $conn->query($sql);
+            // if($conn->query($sql)== true){
+            //     var_dump('anjing6');
+			//     // $sql = "select * from users where username='".$user."'";
+            //     $result=$conn->query($sql);
+            //     // var_dump($result);die;
+			//     while($row = $result->fetch_assoc()){
+				
+		    //     $_SESSION['Name'] =  $row['username'];
+			//     $_SESSION['Id'] = $row['Id'];
+			    // $sql = "DELETE FROM ".$dbname.".`online` WHERE plrid=".$_SESSION["Id"];
+			    // $conn->query($sql);
+			    // $sql = "INSERT INTO ".$dbname.".`online`(`plrid`, `plrname`) VALUES (".$_SESSION['Id'].",'".$_SESSION['Name']."')";
+			    // $conn->query($sql);
 			
 			
-			// header("Location:online.php"); /* Redirect browser */
-            exit();
-			}		
 			
-}	
+            // exit();
+			// }		
+			
+// }	
 }
 	}
 	else {
@@ -86,7 +103,10 @@ if(isset($_POST['oldP'])){ /* this if checks is form is submitted by checking th
     <input name="confirmP" type="password" class="form-control" >
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
-</form>    
+</form>  
+<div class="container" style="margin-top: 20px">
+<a href="online.php" class="btn btn-secondary">Back</a>
+</div>  
 </div>
 </body>
 </html>
