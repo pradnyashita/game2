@@ -7,10 +7,12 @@ $confirmP ="";
 $error1 = "";// this will be use for displaying error (Username or password is incorrect)
 $error = "";// this will be use for displaying sql connect errors
 
+
+
 if(isset($_POST['oldP'])){ /* this if checks is form is submitted by checking that $_POST['username'] is set or exists */
     $newP = $_POST['newP'];
 	$confirmP = $_POST['confirmP'];
-	$oldP = $_POST['oldP'];
+    $oldP = $_POST['oldP'];
 	if($newP == $confirmP){
         include 'connection.php'; /* this file contains variables used for connecting to database ($server,$username,$password,$dbname)*/
         $conn = new mysqli($server, $username, $password,$dbname);// this create connection
