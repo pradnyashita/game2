@@ -57,27 +57,58 @@ $error = "";
 <link href="css/stylesheet.css" rel="stylesheet">
 </head>
 <body style="background:url(images/bgpageonline.png); color:white;">
+<<<<<<< Updated upstream
 <nav class="navbar navbar-default">
   <div class="container-fluid"> 
    
     <a href="Logout.php" > <button style="float:right; margin:2%; background-color: #ed55a9; border-color: transparent" class="btn btn-default"> <span class="glyphicon glyphicon-log-out"> </span> Log Out</button></a>
+=======
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+  <a href="Logout.php" > <button class="btn btn-default"> <span class="glyphicon glyphicon-log-out"> </span> Log Out</button></a>
+  <a href="profile.php" > <button class="btn btn-default"> Profile </button></a>
+
+	<a class="navbar-brand"><img style="width: 65px; height: auto; margin-left: 25px; margin-top: 5px;"
+          class="img-fluid" src="images/logo.png" alt="TOETICTAC"></a>
+
+	<a><img style="width: 50px; height: auto; margin-top: 20px;" src="images/toetictac.svg"</a>
+>>>>>>> Stashed changes
       
 </div></nav>
+
 <div class="container text-center" style="text-align:center;">
+<<<<<<< Updated upstream
   <div class="row justify-content-center">
   <h1>ONLINE PLAYERS</h1> </div>
 
   <div style="width:80%; margin-left:10%; text-align:center">
   <div style="width:80%; margin-left:10%; text-align:left;">
       
+=======
+<div class="row justify-content-center">
+<h1>ONLINE PLAYERS</h1> </div>
+
+<div style="width:80%; margin-left:10%; text-align:center">
+<div style="width:80%; margin-left:10%; text-align:left;"> 
+
+>>>>>>> Stashed changes
 <span id="onlinepl"> </span>
 
-    
+    <br>
+    <br>
+    <br>
   
   <p> <?php echo $error // display error ?></p>
    </div>
   </div></div>
   
+<<<<<<< Updated upstream
+=======
+  <div class="container text-center" style="text-align:center;">
+  <div class="row justify-content-center">
+>>>>>>> Stashed changes
   <h1 style="width:750px align:center">REQUESTS</h1>
   <div class="text-center" style=" margin-left:25%;width:50%; background:white; color:black;" >
   <span id="req"> </span>

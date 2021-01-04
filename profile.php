@@ -79,13 +79,40 @@ $conn->query($sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">    
     <title>Document</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/stylesheet.css" rel="stylesheet">
+
 </head>
-<body>
+<body style="background:url(images/bgpageonline.png);">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid"> 
+
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+  <a href="online.php" > <button class="btn btn-default"> Back </button></a>
+
+	<a class="navbar-brand"><img style="width: 65px; height: auto; margin-left: 25px; margin-top: 5px;"
+          class="img-fluid" src="images/logo.png" alt="TOETICTAC"></a>
+
+	<a><img style="width: 50px; height: auto; margin-top: 10px;" src="images/toetictac.svg"</a>
+
+  <!-- <a href="online.php" class="btn btn-menu">Back</a>
+
+  <a class="navbar-brand"><img style="width: 65px; height: auto; margin-left: 25px; margin-top: 5px;"
+          class="img-fluid" src="images/logo.png" alt="TOETICTAC"></a>
+
+	<a><img style="width: 50px; height: auto; margin-top: 20px;" src="images/toetictac.svg"</a> -->
+      
+</div></nav>
+
     <div class="container">
 
-    <h1>PROFILE</h1>
-    <div class="card" style="width: 18rem;">
-
+    
+    <div class="card">
+      <br>
+    <h1 style="background-color: transparent;"><?= $_SESSION['Name']?>'s PROFILE</h1>
     <?php
     include 'connection.php';
     $conn = new mysqli($server, $username, $password,$dbname);// this create connection
@@ -100,17 +127,16 @@ $conn->query($sql);
     
     ?>
   <img src="images/<?= $image;?>" class="card-img-top" alt="ini foto bambang">
+
   
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-  Change Image
-</button>
+
   <div class="card-body">
      </div>
      <p class="card-text" style="margin-left: 16px">Nama: <?= $_SESSION['Name']?></p>
   <div class="card-body"> 
-    <a href="online.php" class="btn btn-secondary">Back</a>
-    <a href="editProfile.php" class="btn btn-primary">Edit Profile</a>
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Change Image </button>
+    <a href="editProfile.php" class="btn btn-secondary">Change Password</a>
   </div>
 </div>
 </div>

@@ -76,6 +76,8 @@ exit();
    
 ?>
 <link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/stylesheet.css" rel="stylesheet">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -84,39 +86,37 @@ exit();
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body style="background:url(images/bglandingpage.png); max-width:100%; height:auto; background-size:cover; background-repeat:no-repeat;">
 <nav class="navbar navbar-default">
-  <div class="container-fluid"> 
     <!-- Brand and toggle get grouped for better mobile display -->
-    <h1 style="float:left; color:#494CE9; font-family:Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', monospace;"> TicTacToe </h1>
+
     <a href="index.php">
-    <button style="float:right; margin:2%;" class="btn btn-default">Login </button></a>
+    <button class="btn btn-default">Log In </button></a>
       
 </div></nav>
 
-<div class="container text-center" >
-  
-  <h2>Sign Up</h2> 
- 
-  <hr>
-  
+<div class="container text-center signup">
+   
+<div class="row justify-content-center my-4">
+<div class="col-3 align-self-right pr-0"> <img style="width: 76px; height: auto; margin-top: 5px; margin-bottom: 5px;" class="img-fluid" src="images/logo.png" alt="TOETICTAC"> </div>
+<div class="col-2 align-self-left pl-0"> <a><img style="width: 50px; height: auto; margin-top: 10px;" src="images/toetictac.svg"</a> </div> </div>
     
     <form action="signup.php" method="post" >
-    <div class="form-group text-left center-block" style=" width:50%;" >
-      <label for="usr">UserName:</label>
-      <input placeholder="Enter You Username..." type="text" class="form-control" name="username"required value="<?php echo $user?>"> 
+    <div class="form-group text-left center-block text-center" style=" width:50%; color:white;" >
+      <label for="usr">Username</label>
+      <input placeholder="Enter your Username..." type="text" class="form-control" name="username"required value="<?php echo $user?>"> 
     </div>
-    <div class="form-group text-left center-block" style=" width:50%;" >
-      <label for="pwd">Password:</label>
+    <div class="form-group text-left center-block text-center" style=" width:50%; color:white; " >
+      <label for="pwd">Password</label>
       <input placeholder="Enter your Password..." type="password" class="form-control" name="password" required value="<?php echo $pass?>"> 
     </div>
-    <div class="form-group text-left center-block" style=" width:50%;" >
-      <label for="pwd">Re-type Password:</label>
-      <input placeholder="Re-type Password..." type="password" class="form-control" name="rpassword" required value="<?php echo $rpass?>"> 
+    <div class="form-group text-left center-block text-center" style=" width:50%; color:white;" >
+      <label for="pwd">Retype Password</label>
+      <input placeholder="Retype Password..." type="password" class="form-control" name="rpassword" required value="<?php echo $rpass?>"> 
     </div>
     <?php echo '<p style="color:red">'.$error. "</p>"?>
-    <h4><input id="submit"  type="submit" class="btn-primary" value="Sign Up"/> <button class="btn-primary" type="reset" > Clear </button></h4>
+	<h4><input id="submit"  type="submit" class="btn btn-login" value="Sign Up"/>
+	 <button class="btn btn-login" type="reset" > Clear </button></h4>
   </form>
   
-   <br><b>&copy; M.Adeel</b> </div> 
 </html>

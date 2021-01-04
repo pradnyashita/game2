@@ -85,31 +85,47 @@ if(isset($_POST['oldP'])){ /* this if checks is form is submitted by checking th
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">    
     <title>Document</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/stylesheet.css" rel="stylesheet">
+
 </head>
-<body>
-    <div class="container">
+<body style="background:url(images/bgpageonline.png);">
 
-   
+<nav class="navbar navbar-default">
+  <div class="container-fluid"> 
+
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+  <a href="profile.php" > <button class="btn btn-default"> Back </button></a>
+
+	<a class="navbar-brand"><img style="width: 65px; height: auto; margin-left: 25px; margin-top: 5px;"
+          class="img-fluid" src="images/logo.png" alt="TOETICTAC"></a>
+
+	<a><img style="width: 50px; height: auto; margin-top: 10px;" src="images/toetictac.svg"</a>
+
+    <h6> CHANGE YOUR PASSWORD </h6>
+
+    <div class="container text-center" style="text-align:center;">
+    <div class="row justify-content-center">
+
 <form action="" method= "post">
-<div class="mb-3">
-    <label  class="form-label">old Password</label>
-    <input name="oldP" type="password" class="form-control" >
+<div class="mb-3 center-block text-center">
+    <label class="form-label">old Password</label> <br>
+    <input name="oldP" type="password" class="form-control form-control2 align-self-center" >
   </div>
-<div class="mb-3">
-    <label class="form-label"> new Password</label>
-    <input name="newP"  type="password" class="form-control" >
+<div class="mb-3 center-block text-center">
+    <label class="form-label"> new Password</label> <br>
+    <input name="newP"  type="password" class="form-control form-control2 align-self-center" >
   </div>
 
-  <div class="mb-3">
-    <label  class="form-label">confirm Password</label>
-    <input name="confirmP" type="password" class="form-control" >
-  </div>
+  <div class="mb-3 center-block text-center">
+    <label class="form-label text-center">confirm Password</label> <br>
+    <input name="confirmP" type="password" class="form-control form-control2" >
+  </div class="submit-btn">
   <button type="submit" class="btn btn-primary">Submit</button>
-</form>  
-<div class="container" style="margin-top: 20px">
-<a href="profile.php" class="btn btn-secondary">Back</a>
-</div>  
-</div>
+</form>    
+</div></div></div>
 </body>
 </html>
 
