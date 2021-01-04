@@ -58,6 +58,7 @@ $error = "";
 </head>
 <body style="background:url(images/bgpageonline.png); color:white;">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <nav class="navbar navbar-default">
   <div class="container-fluid"> 
    
@@ -66,6 +67,11 @@ $error = "";
 
 <nav class="navbar navbar-default">
   <div class="container-fluid"> 
+=======
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid"> 
+>>>>>>> Stashed changes
     <!-- Brand and toggle get grouped for better mobile display -->
   <a href="Logout.php" > <button class="btn btn-default"> <span class="glyphicon glyphicon-log-out"> </span> Log Out</button></a>
   <a href="profile.php" > <button class="btn btn-default"> Profile </button></a>
@@ -74,11 +80,15 @@ $error = "";
           class="img-fluid" src="images/logo.png" alt="TOETICTAC"></a>
 
 	<a><img style="width: 50px; height: auto; margin-top: 20px;" src="images/toetictac.svg"</a>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       
 </div></nav>
 
 <div class="container text-center" style="text-align:center;">
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   <div class="row justify-content-center">
   <h1>ONLINE PLAYERS</h1> </div>
@@ -87,12 +97,17 @@ $error = "";
   <div style="width:80%; margin-left:10%; text-align:left;">
       
 =======
+=======
+>>>>>>> Stashed changes
 <div class="row justify-content-center">
 <h1>ONLINE PLAYERS</h1> </div>
 
 <div style="width:80%; margin-left:10%; text-align:center">
 <div style="width:80%; margin-left:10%; text-align:left;"> 
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 <span id="onlinepl"> </span>
 
@@ -105,6 +120,11 @@ $error = "";
   </div></div>
   
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+  <div class="container text-center" style="text-align:center;">
+  <div class="row justify-content-center">
+>>>>>>> Stashed changes
 =======
   <div class="container text-center" style="text-align:center;">
   <div class="row justify-content-center">
