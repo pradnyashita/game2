@@ -219,37 +219,16 @@ radbtn();
 <nav class="navbar navbar-default">
   <div class="container-fluid"> 
     <!-- Brand and toggle get grouped for better mobile display -->
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+    
+	<a class="navbar-brand"><img style="width: 65px; height: auto; margin-left: 25px; margin-top: 5px;"
+          class="img-fluid" src="images/logo.png" alt="TOETICTAC"></a>
+
+	<a><img style="width: 50px; height: auto; margin-top: 20px;" src="images/toetictac.svg"></a>
 	<a href="Logout.php" > <button class="btn btn-default"> <span class="glyphicon glyphicon-log-out"> </span> Log Out</button></a>
 	<a href="online.php" > <button class="btn btn-default"><span class="glyphicon glyphicon-backward"> </span> Back</button></a>
-    
-      
-</div></nav>
-=======
-	<a href="Logout.php" > <button class="btn btn-menu"> <span class="glyphicon glyphicon-log-out"> </span> Log Out</button></a>
-	<a href="online.php" > <button class="btn btn-menu"><span class="glyphicon glyphicon-backward"> </span> Back</button></a>
-    
-	<a class="navbar-brand"><img style="width: 65px; height: auto; margin-left: 25px; margin-top: 5px;"
-          class="img-fluid" src="images/logo.png" alt="TOETICTAC"></a>
-
-	<a><img style="width: 50px; height: auto; margin-top: 20px;" src="images/toetictac.svg"</a>
-	
 </div></nav>
 
->>>>>>> Stashed changes
-=======
-	<a href="Logout.php" > <button class="btn btn-menu"> <span class="glyphicon glyphicon-log-out"> </span> Log Out</button></a>
-	<a href="online.php" > <button class="btn btn-menu"><span class="glyphicon glyphicon-backward"> </span> Back</button></a>
-    
-	<a class="navbar-brand"><img style="width: 65px; height: auto; margin-left: 25px; margin-top: 5px;"
-          class="img-fluid" src="images/logo.png" alt="TOETICTAC"></a>
 
-	<a><img style="width: 50px; height: auto; margin-top: 20px;" src="images/toetictac.svg"</a>
-	
-</div></nav>
-
->>>>>>> Stashed changes
 <body style="background:url(images/bgpageonline.png);">
 <div class="container">
 <center>
@@ -271,24 +250,14 @@ radbtn();
  <br>
  <span style="font-size:20px;">
  <p id="turntxt" style="color:white;"></p> 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
- <div class="player"><input class="player" type="radio" id="pl1" name="player" value="1" disabled/> <?php echo $pname; ?>&nbsp; </div>
- <div class="player"><input class="player" type="radio" id="pl2" name="player" value="2" disabled/> <?php echo $oppname; ?><br></div>
-=======
-=======
->>>>>>> Stashed changes
- 
+
+
  <div class="container">
 	 <div class="row justify-content-center">
  <div class="col-6 player"><input class="player" type="radio" id="pl1" name="player" value="1" disabled/> <?php echo $pname; ?>&nbsp; </div>
  <div class="col-6 player"><input class="player" type="radio" id="pl2" name="player" value="2" disabled/> <?php echo $oppname; ?><br></div> 
 </div>
 </div>
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 </span>
 </form>
 </div></center>

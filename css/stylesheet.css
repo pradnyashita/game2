@@ -26,8 +26,6 @@ h1 {
   font-family: "RubikOne-Regular";
   background-color: #ecf3fb;
   justify-content: center;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 }
 
 h2 {
@@ -54,9 +52,6 @@ h2 {
   background-color: #ecf3fb;
   border-radius: 20px;
   margin-bottom: 20px;
-=======
-=======
->>>>>>> Stashed changes
   text-transform: uppercase;
 }
 
@@ -180,24 +175,14 @@ h6 {
 .login {
   width: 430px;
   height: 330px;
-
   background: #2b2a3d;
   border-radius: 48px;
-<<<<<<< Updated upstream
 }
 
 .logininfo {
   font-size: 20px;
 }
 
-=======
-}
-
-.logininfo {
-  font-size: 20px;
-}
-
->>>>>>> Stashed changes
 .card {
   background-color: #ecf3fb;
   margin-left: 60px;
@@ -240,8 +225,4 @@ h6 {
   font-weight: bold;
   display: inline;
   /* margin-left: 31%; */
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }

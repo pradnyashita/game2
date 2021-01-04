@@ -2,18 +2,10 @@
 
 session_start();// session started
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-		if(isset($_SESSION['Name'])){ /*
- this check if user is log in  by checking $_SESSION['Name'] variable  */	
-=======
+
+
     if(isset($_SESSION['Name'])){
       /*this check if user is log in  by checking $_SESSION['Name'] variable  */	
->>>>>>> Stashed changes
-=======
-    if(isset($_SESSION['Name'])){
-      /*this check if user is log in  by checking $_SESSION['Name'] variable  */	
->>>>>>> Stashed changes
 		header("Location: online.php"); 
 exit();
 		}
@@ -83,14 +75,9 @@ $conn->close();
    
 ?>
 <link href="css/bootstrap.css" rel="stylesheet">
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
+
 <link href="css/bootstrap.min.css" rel="stylesheet">
->>>>>>> Stashed changes
-=======
-<link href="css/bootstrap.min.css" rel="stylesheet">
->>>>>>> Stashed changes
+
 <link href="css/stylesheet.css" rel="stylesheet">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -100,45 +87,11 @@ $conn->close();
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<body style="background:url(images/bglandingpage.png); max-width:100%; height:75%">
+
 <div class="container-fluid">
-=======
+
 <body style="background:url(images/bglandingpage.png); max-width:100%; height:auto; background-size:cover; background-repeat:no-repeat;">
->>>>>>> Stashed changes
-<nav class="navbar navbar-default">
-    <!-- Brand and toggle get grouped for better mobile display -->
-<<<<<<< Updated upstream
-    <h2> TOETACTIC </h2>
-    <a href="signup.php">
-    <button style="float:right; margin:2%;" class="btn btn-default">Sign Up</button></a>
-      
-</div></nav>
 
-<div class="container text-center" >
-  
-  <h3>Log In </h3> 
-    
-    <form action="index.php" method="post" >
-    <div class="form-group text-left center-block" style=" width:50%;" >
-      <label for="usr">Username:</label>
-      <input placeholder="Enter You Username..." type="text" class="form-control" name="username"required> 
-=======
-
-    <a href="signup.php">
-    <button class="btn btn-default">Sign Up</button></a>
-      
-</div></nav>
-
-<div class="container text-center login">
-
-<div class="row justify-content-center my-4">
-<div class="col-3 align-self-right pr-0"> <img style="width: 76px; height: auto; margin-top: 5px" class="img-fluid" src="images/logo.png" alt="TOETICTAC"> </div>
-<div class="col-2 align-self-left pl-0"> <a><img style="width: 50px; height: auto; margin-top: 10px;" src="images/toetictac.svg"</a> </div> </div>
-    
-=======
-<body style="background:url(images/bglandingpage.png); max-width:100%; height:auto; background-size:cover; background-repeat:no-repeat;">
 <nav class="navbar navbar-default">
     <!-- Brand and toggle get grouped for better mobile display -->
 
@@ -147,22 +100,18 @@ $conn->close();
       
 </div></nav>
 
+
 <div class="container text-center login">
 
 <div class="row justify-content-center my-4">
 <div class="col-3 align-self-right pr-0"> <img style="width: 76px; height: auto; margin-top: 5px" class="img-fluid" src="images/logo.png" alt="TOETICTAC"> </div>
-<div class="col-2 align-self-left pl-0"> <a><img style="width: 50px; height: auto; margin-top: 10px;" src="images/toetictac.svg"</a> </div> </div>
+<div class="col-2 align-self-left pl-0"> <a><img style="width: 50px; height: auto; margin-top: 10px;" src="images/toetictac.svg"></a> </div> </div>
     
->>>>>>> Stashed changes
 <div class= "logininfo">    
 <form action="index.php" method="post" >
     <div class="form-group text-left center-block text-center" style=" width:50%; color:white;" >
       <label for="usr">Username</label>
       <input placeholder="Enter your Username..." type="text" class="form-control" name="username"required> 
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     </div>
     <div class="form-group text-left center-block text-center" style=" width:50%; color:white;" >
       <label for="pwd">Password</label>

@@ -112,7 +112,7 @@ $conn->query($sql);
     
     <div class="card">
       <br>
-    <h1 style="background-color: transparent;"><?= $_SESSION['Name']?>'s PROFILE</h1>
+    <h6 style="background-color: transparent;"><?= $_SESSION['Name']?>'s PROFILE</h6>
     <?php
     include 'connection.php';
     $conn = new mysqli($server, $username, $password,$dbname);// this create connection
@@ -130,13 +130,14 @@ $conn->query($sql);
 
   
     <!-- Button trigger modal -->
-
-  <div class="card-body">
+  <div class="container">
+  <div class="row justify-content-center card-body">
      </div>
      <p class="card-text" style="margin-left: 16px">Nama: <?= $_SESSION['Name']?></p>
-  <div class="card-body"> 
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Change Image </button>
-    <a href="editProfile.php" class="btn btn-secondary">Change Password</a>
+  <div class="row justify-content-center card-body"> 
+  <button type="button" class="col-4 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Change Image </button>
+    <button type="button" class="col-4 btn btn-primary"><a href="editProfile.php" >Change Password</a> </button>
+  </div>
   </div>
 </div>
 </div>
