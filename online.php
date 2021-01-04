@@ -54,25 +54,21 @@ $error = "";
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php echo $_SESSION['Name'];?> - TicTacToe</title>
 <link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/stylesheet.css" rel="stylesheet">
 </head>
-<body style="background:#646BF4; color:white;">
+<body style="background:url(images/bgpageonline.png); color:white;">
 <nav class="navbar navbar-default">
-<div>
-
-<a href="profile.php" > <button style="float:left; margin:2%;" class="btn btn-default">Profile</button></a>
-      
-
-</div>
   <div class="container-fluid"> 
    
-    <a href="Logout.php" > <button style="float:right; margin:2%;" class="btn btn-default"> <span class="glyphicon glyphicon-log-out"> </span> Log Out</button></a>
+    <a href="Logout.php" > <button style="float:right; margin:2%; background-color: #ed55a9; border-color: transparent" class="btn btn-default"> <span class="glyphicon glyphicon-log-out"> </span> Log Out</button></a>
       
 </div></nav>
 <div class="container text-center" style="text-align:center;">
-  
-  <h1> online players: </h1>
-  <hr>
-  <div style="width:80%; margin-left:10%; text-align:center"><div style="width:80%; margin-left:10%; text-align:left;">
+  <div class="row justify-content-center">
+  <h1>ONLINE PLAYERS</h1> </div>
+
+  <div style="width:80%; margin-left:10%; text-align:center">
+  <div style="width:80%; margin-left:10%; text-align:left;">
       
 <span id="onlinepl"> </span>
 
@@ -82,8 +78,8 @@ $error = "";
    </div>
   </div></div>
   
-  <div class="text-center" style=" margin-left:20%;width:60%; background:white; color:black;" >
-  <h2> Requests </h2>
+  <h1 style="width:750px align:center">REQUESTS</h1>
+  <div class="text-center" style=" margin-left:25%;width:50%; background:white; color:black;" >
   <span id="req"> </span>
   </div>
   

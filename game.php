@@ -47,8 +47,8 @@ $oppname = $pl1name;
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php echo $_SESSION['Name'];?> - Tic Tac Toe</title>
-<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap-3.3.4.css" rel="stylesheet" type="text/css">
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
 <script src="jQueryAssets/jquery-1.11.1.min.js" type="text/javascript"></script>
 <script> 
 var checkedboxes = new Array(0,0,0,0,0,0,0,0,0);
@@ -219,11 +219,12 @@ radbtn();
 <nav class="navbar navbar-default">
   <div class="container-fluid"> 
     <!-- Brand and toggle get grouped for better mobile display -->
-   <a href="online.php" > <button style="float:left; margin:2%;" class="btn btn-default"><span class="glyphicon glyphicon-backward"> </span> Back</button></a>
-    <a href="Logout.php" > <button style="float:right; margin:2%;" class="btn btn-default"> <span class="glyphicon glyphicon-log-out"> </span> Log Out</button></a>
+	<a href="Logout.php" > <button class="btn btn-default"> <span class="glyphicon glyphicon-log-out"> </span> Log Out</button></a>
+	<a href="online.php" > <button class="btn btn-default"><span class="glyphicon glyphicon-backward"> </span> Back</button></a>
+    
       
 </div></nav>
-<body style="background:#8DC9F4;">
+<body style="background:url(images/bgpageonline.png);">
 <div class="container">
 <center>
 <h1 id="txt"></h1>
@@ -244,8 +245,8 @@ radbtn();
  <br>
  <span style="font-size:20px;">
  <p id="turntxt" style="color:white;"></p> 
- <input type="radio" id="pl1" name="player" value="1" disabled/> <?php echo $pname; ?>&nbsp;
- <input type="radio" id="pl2" name="player" value="2" disabled/> <?php echo $oppname; ?><br>
+ <div class="player"><input class="player" type="radio" id="pl1" name="player" value="1" disabled/> <?php echo $pname; ?>&nbsp; </div>
+ <div class="player"><input class="player" type="radio" id="pl2" name="player" value="2" disabled/> <?php echo $oppname; ?><br></div>
 </span>
 </form>
 </div></center>

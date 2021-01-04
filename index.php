@@ -1,10 +1,8 @@
 <?php 
+
 session_start();// session started
 
-    if(isset($_SESSION['Name'])){
-      
-      /*
-    
+		if(isset($_SESSION['Name'])){ /*
  this check if user is log in  by checking $_SESSION['Name'] variable  */	
 		header("Location: online.php"); 
 exit();
@@ -75,6 +73,7 @@ $conn->close();
    
 ?>
 <link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/stylesheet.css" rel="stylesheet">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -83,26 +82,24 @@ $conn->close();
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body style="background:url(images/bglandingpage.png); max-width:100%; height:75%">
+<div class="container-fluid">
 <nav class="navbar navbar-default">
   <div class="container-fluid"> 
     <!-- Brand and toggle get grouped for better mobile display -->
-    <h1 style="float:left; color:#494CE9; font-family:Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', monospace;"> TicTacToe </h1>
+    <h2> TOETACTIC </h2>
     <a href="signup.php">
-    <button style="float:right; margin:2%;" class="btn btn-default">Sign UP</button></a>
+    <button style="float:right; margin:2%;" class="btn btn-default">Sign Up</button></a>
       
 </div></nav>
 
 <div class="container text-center" >
   
-  <h2>Log In </h2> 
- 
-  <hr>
-  
+  <h3>Log In </h3> 
     
     <form action="index.php" method="post" >
     <div class="form-group text-left center-block" style=" width:50%;" >
-      <label for="usr">UserName:</label>
+      <label for="usr">Username:</label>
       <input placeholder="Enter You Username..." type="text" class="form-control" name="username"required> 
     </div>
     <div class="form-group text-left center-block" style=" width:50%;" >
@@ -118,5 +115,6 @@ $conn->close();
 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/bootstrap.js"></script>
+</div>
 </body>
 </html>

@@ -16,9 +16,12 @@ exit();
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="jQueryAssets/jquery-1.11.1.min.js" type="text/javascript"></script>
 <script src="jQueryAssets/jquery.ui-1.10.4.button.min.js" type="text/javascript"></script>
+
 <link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/stylesheet.css" rel="stylesheet">
+
 </head>
-<body style="background:#646BF4; color:white;">
+<body style="background:url(images/bgpageonline.png);; color:white;">
 <nav class="navbar navbar-default">
   <div class="container-fluid"> 
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -30,7 +33,6 @@ exit();
 <div class="container text-center" style="text-align:center;">
   
   <h1> Waiting For Your Opponent To Accept Your Challenge... </h1>
-  <hr>
   <div style="width:80%; margin-left:10%; text-align:center"><div style="width:80%; margin-left:10%; text-align:left;">
  <script>
  var id = <?php echo $_SESSION['requestid'] ?>; 
