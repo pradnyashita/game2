@@ -104,7 +104,7 @@ if(isset($_POST['oldP'])){ /* this if checks is form is submitted by checking th
 
 	<a><img style="width: 50px; height: auto; margin-top: 10px;" src="images/toetictac.svg"</a>
 
-    <h6> CHANGE YOUR PASSWORD </h6>
+    <h6 style= "color:#ecf3fb"> CHANGE YOUR PASSWORD </h6>
 
     <div class="container text-center" style="text-align:center;">
     <div class="row justify-content-center">
