@@ -133,10 +133,13 @@ $conn->query($sql);
   <div class="container">
   <div class="row justify-content-center card-body">
      </div>
-     <p class="card-text" style="margin-left: 16px">Nama: <?= $_SESSION['Name']?></p>
-  <div class="row justify-content-center card-body"> 
-  <button type="button" class="col-4 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Change Image </button>
-    <button type="button" class="col-4 btn btn-primary"><a href="editProfile.php" >Change Password</a> </button>
+     <!-- <p class="card-text" style="margin-left: 16px">Nama: <?= $_SESSION['Name']?></p> -->
+  <div class="row2 justify-content-center card-body"> 
+
+  <div class="container-fluid"> 
+  <button type="button" class="col-6 btn btn-menu" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Change Image </button>
+  <a style= "color: black" href="editProfile.php"> <button type="button" style="width:150px" class="col-6 btn btn-menu"> Change Password </button> </a>
+  </div>
   </div>
   </div>
 </div>

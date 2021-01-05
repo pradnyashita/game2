@@ -3,7 +3,7 @@
 $server = "localhost";
 $username = "root";
 $password = "";
-$dbname = "tictactoegame";
+$dbname = "game2";
 
 
 ?>

@@ -48,11 +48,16 @@ h2 {
 }
 
 .player {
-  width: 150px;
+  width: 300px;
   background-color: #ecf3fb;
   border-radius: 20px;
   margin-bottom: 20px;
   text-transform: uppercase;
+}
+
+.player-chance {
+  width: 150px;
+  text-transform: none;
 }
 
 h2 {
@@ -157,13 +162,6 @@ h6 {
   margin-left: 31%;
 }
 
-.player {
-  width: 300px;
-  background-color: #ecf3fb;
-  border-radius: 20px;
-  margin-bottom: 20px;
-}
-
 .signup {
   width: 430px;
   height: 355px;
@@ -225,4 +223,8 @@ h6 {
   font-weight: bold;
   display: inline;
   /* margin-left: 31%; */
+}
+
+.row2 {
+  width: 200px;
 }
