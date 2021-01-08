@@ -40,7 +40,7 @@ if(isset($_POST['oldP'])){ /* this if checks is form is submitted by checking th
 			// $conn->query($sql);
 			// $sql = "INSERT INTO ".$dbname.".`users`(`id`, `username`, `password`) VALUES ('".$id."','".$_SESSION['Name']."','". $newP."')";
             $conn->query($sql);
-            header("Location:online.php"); /* Redirect browser */
+            header("Location:profile.php"); /* Redirect browser */
 
 }
 	}
