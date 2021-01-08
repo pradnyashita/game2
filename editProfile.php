@@ -34,10 +34,11 @@ if(isset($_POST['oldP'])){ /* this if checks is form is submitted by checking th
 			$row = $result->fetch_assoc();
 				
 		        
-			$id= $row['Id'];
-			$sql = "DELETE FROM ".$dbname.".`users` WHERE id='".$id."'";
-			$conn->query($sql);
-			$sql = "INSERT INTO ".$dbname.".`users`(`id`, `username`, `password`) VALUES ('".$id."','".$_SESSION['Name']."','". $newP."')";
+      $id= $row['Id'];
+      $sql = "UPDATE users SET password='". $newP."' WHERE id='".$id."'";
+			// $sql = "DELETE FROM ".$dbname.".`users` WHERE id='".$id."'";
+			// $conn->query($sql);
+			// $sql = "INSERT INTO ".$dbname.".`users`(`id`, `username`, `password`) VALUES ('".$id."','".$_SESSION['Name']."','". $newP."')";
             $conn->query($sql);
             header("Location:online.php"); /* Redirect browser */
 
