@@ -31,6 +31,7 @@
 
 body {
   place-content: center;
+  background-position: center;
 }
 
 h1 {
