@@ -27,8 +27,7 @@ if(isset($_POST['oldP'])){ /* this if checks is form is submitted by checking th
             $error = "your pass is wrong";
         }
         else {
-            // var_dump('anjing3');
-
+           
             $sql = "SELECT * from users where username='".$_SESSION['Name']."'";
             $result=$conn->query($sql);
                 // var_dump($result);die;
@@ -41,34 +40,7 @@ if(isset($_POST['oldP'])){ /* this if checks is form is submitted by checking th
 			$sql = "INSERT INTO ".$dbname.".`users`(`id`, `username`, `password`) VALUES ('".$id."','".$_SESSION['Name']."','". $newP."')";
             $conn->query($sql);
             header("Location:online.php"); /* Redirect browser */
-            // $sql = "UPDATE `users` SET password = '".$newP."' WHERE username = '".$_SESSION['Name']."'";
-            // $conn->query($sql);
-            // var_dump($result->num_rows);die;
 
-            // $sql = "DELETE FROM ".$dbname.". `users` WHERE username ='".$_SESSION["Name"]."'";
-			// $conn->query($sql);
-			// $sql = "INSERT INTO ".$dbname.".`users`(`plrid`, `username`, ``) VALUES (".$_SESSION['Id'].",'".$_SESSION['Name']."')";
-			// $conn->query($sql);
-            // if($conn->query($sql)== true){
-            //     var_dump('anjing6');
-			//     // $sql = "select * from users where username='".$user."'";
-            //     $result=$conn->query($sql);
-            //     // var_dump($result);die;
-			//     while($row = $result->fetch_assoc()){
-				
-		    //     $_SESSION['Name'] =  $row['username'];
-			//     $_SESSION['Id'] = $row['Id'];
-			    // $sql = "DELETE FROM ".$dbname.".`online` WHERE plrid=".$_SESSION["Id"];
-			    // $conn->query($sql);
-			    // $sql = "INSERT INTO ".$dbname.".`online`(`plrid`, `plrname`) VALUES (".$_SESSION['Id'].",'".$_SESSION['Name']."')";
-			    // $conn->query($sql);
-			
-			
-			
-            // exit();
-			// }		
-			
-// }	
 }
 	}
 	else {

@@ -126,8 +126,9 @@ $conn->query($sql);
             // var_dump($image);die;
     
     ?>
-  <img src="images/<?= $image;?>" class="card-img-top" alt="ini foto bambang">
-
+  <div>  
+  <img src="images/<?= $image;?>" class="card-img-top" alt="Foto <?=$_SESSION['Name']?>" style="width:300px">
+  </div>
   
     <!-- Button trigger modal -->
   <div class="container">
