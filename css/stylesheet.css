@@ -223,7 +223,7 @@ h6 {
 
 .form-label {
   font-weight: bold;
-  color: white;
+  color: black;
 }
 
 .form-control {
@@ -235,7 +235,7 @@ h6 {
 .form-control2 {
   width: 190px;
   border-radius: 48px;
-  color: white;
+  color: black;
   font-weight: bold;
   display: inline;
   /* margin-left: 31%; */
