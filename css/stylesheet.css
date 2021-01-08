@@ -180,12 +180,13 @@ h6 {
 .signup {
   width: 430px;
   height: 355px;
-
+  place-content: center;
   background: #2b2a3d;
   border-radius: 48px;
 }
 
 .login {
+  place-content: center;
   width: 430px;
   height: 330px;
   background: #2b2a3d;
